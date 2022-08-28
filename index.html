@@ -26,15 +26,15 @@
                 <button id="switch-theme-button" onclick="switchTheme()">Inverte Mundos</button>
         </div>
 
-
+        <div id="top-characters" class="world-characters">Mundo normal</div>
     </header>
 
     <main>
-        <div id="bottom-characters" class="world-characters"></div>
+        <div id="bottom-characters" class="world-characters">Numdo invertido</div>
 
         <section id="section-inverted-world" class="container">
             <div class="section-texts">
-                <h1>O Mundo Invertido</h1>
+                <h2>O Mundo Invertido</h2>
                 <p role="text">
                   O Mundo Invertido parece uma cópia do nosso mundo, mas com criaturas
                   horrendas, tempestades assustadoras, muita escuridão e entidades
@@ -129,11 +129,20 @@
 
     <footer>
         <p>
-            Projeto construído para fins didáticos. Objetivos: 1) Colocar em
-            prática os conhecimentos de HTML, CSS e JavaScript aprendidos na DIO. 2) Botar para detonar no Vecna ;-)
-          </p>
+            Projeto construído para fins didáticos. 
+        </p>
+        <p>Objetivos: 1) Colocar em
+            prática os conhecimentos de HTML, CSS e JavaScript aprendidos na DIO. 2) Botar para detonar no Vecna. ;-)
+        </p>
           <img src="assets/images/footer/logo.svg" alt="Logo DIO">
     </footer>
-    
+
+    <script type="module" src="assets/main.js"></script>
+    <script>
+      function switchTheme() {
+        document.body.classList.toggle('dark-theme');
+        document.body.classList.toggle('light-theme');
+      }
+    </script>
 </body>
 </html>
